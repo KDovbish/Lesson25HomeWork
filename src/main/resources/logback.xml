@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <appender name="TOFILE1" class="ch.qos.logback.core.FileAppender">
+        <file>game.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d - %-5level - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="TOFILE2" class="ch.qos.logback.core.FileAppender">
+        <file>gameresult.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d - %-5level - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="hillel.homeworks.game.GameWithLogback" level="DEBUG">
+        <appender-ref ref="TOFILE1"/>
+    </logger>
+
+    <logger name="gameresult" level="INFO">
+        <appender-ref ref="TOFILE2"/>
+    </logger>
+
+</configuration>
