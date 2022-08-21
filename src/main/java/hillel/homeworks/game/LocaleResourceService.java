@@ -32,8 +32,4 @@ public class LocaleResourceService {
     String getResourceValue(String key){
         return resourceBundle.getString(key);
     };
-
-    Locale getLocale() {
-        return locale;
-    }
 }
