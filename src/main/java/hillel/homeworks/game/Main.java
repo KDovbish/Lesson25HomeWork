@@ -125,8 +125,6 @@ public class Main {
         game.printlnLogging(player1.toString());
         game.printlnLogging(player2.toString());
         System.out.println();
-
-
         game.closeLogging();
         //  Логирование посредством Logback
         GameWithLogback.gameResultLogger.info(player1.toString());
